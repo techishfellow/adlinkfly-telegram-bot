@@ -59,4 +59,4 @@ Optional Files:  'poetry.lock' and 'pyproject.toml'
 (It will ping every 5 min to the server to avoid Replit the server hybernation!)
 
 ***
-🔗 **An Open Sourced Script** - Developed with &hearts; by **Subhamoy**
+🔗 **An Open Sourced Project** - Developed with &hearts; by **Subhamoy**
