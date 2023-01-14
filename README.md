@@ -1,4 +1,4 @@
-# Adlinkfly Python Telegram Bot
+# Adlinkfly Telegram Bot
 
 ### A Simple to Use Python based Telegram Bot Script designed to work with Adlinlfly PHP Link Shortener Website using the Adlinkfly Developer API!<br></br>
 **✨ Relese Version:** 1.0.7<br></br>
@@ -59,4 +59,4 @@ Optional Files:  'poetry.lock' and 'pyproject.toml'
 (It will ping every 5 min to the server to avoid Replit the server hybernation!)
 
 ***
-🔗 **An Open Sourced Project** - Developed with &hearts; by **Subhamoy**
+**An Open Sourced Project** - Developed with &hearts; by **Subhamoy**
