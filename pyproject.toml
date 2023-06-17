@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "python-template"
-version = "0.1.0"
-description = ""
+name = "adlinkfly-telegram-bot"
+version = "1.1.0"
+description = "A Simple to Use Python based Telegram Bot Script designed to work with Adlinlfly PHP Link Shortener Website using the Adlinkfly Developer API"
 authors = ["Subhamoy Biswas <admin@neosubhamoy.xyz>"]
 
 [tool.poetry.dependencies]
