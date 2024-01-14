@@ -8,7 +8,7 @@ import requests
 import telebot
 #this script is designed to work with a adlinkfly php link shortener website! for more info read the ' readme.md ' file...!!
 #this script is developed by @neo_subhamoy
-#website: https://neosubhamoy.xyz
+#website: https://neosubhamoy.com
 
 load_dotenv()   #load environment variables from .env file
 
@@ -21,20 +21,36 @@ bot = telebot.TeleBot(API_KEY)
 
 #function for No Ads shortening API call
 def shorten_link(link):
-  r = requests.get(f'https://{DOMAIN}/api?api={ADLINKFLY_KEY}&url={link}&type=0')
-  if r.status_code == 200:
-    response = json.loads(r.text)
-    return response['shortenedUrl']
-  else:
+  try:
+    r = requests.get(f'https://{DOMAIN}/api?api={ADLINKFLY_KEY}&url={link}&type=0')
+
+    if r.status_code == 200:
+      response = json.loads(r.text)
+      return response['shortenedUrl']
+    else:
+      print(f'Request failed with status code: {r.status_code}')
+      print(f'Response content: {r.text}')
+      return None
+
+  except Exception as e:
+    print(f'An error occurred: {str(e)}')
     return None
 
 #function for With Ads shortening API call
 def shorten_link_withads(link):
-  r = requests.get(f'https://{DOMAIN}/api?api={ADLINKFLY_KEY}&url={link}')
-  if r.status_code == 200:
-    response = json.loads(r.text)
-    return response['shortenedUrl']
-  else:
+  try:
+    r = requests.get(f'https://{DOMAIN}/api?api={ADLINKFLY_KEY}&url={link}')
+
+    if r.status_code == 200:
+      response = json.loads(r.text)
+      return response['shortenedUrl']
+    else:
+      print(f'Request failed with status code: {r.status_code}')
+      print(f'Response content: {r.text}')
+      return None
+
+  except Exception as e:
+    print(f'An error occurred: {str(e)}')
     return None
 
 #function to check if the (UserInput) Link is Valid
