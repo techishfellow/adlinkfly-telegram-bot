@@ -10,11 +10,13 @@ import telebot
 #this script is developed by @neo_subhamoy
 #website: https://neosubhamoy.xyz
 
-DOMAIN = os.getenv['DOMAIN_NAME']
-API_KEY = os.getenv['BOT_TOKEN']
-ADLINKFLY_KEY = os.getenv['ADLINKFLY_TOKEN']
-START_MESSAGE = os.getenv['START']
-HELP_MESSAGE = os.getenv['HELP']
+load_dotenv()   #load environment variables from .env file
+
+DOMAIN = os.environ.get('DOMAIN_NAME') or os.getenv('DOMAIN_NAME')
+API_KEY = os.environ.get('BOT_TOKEN') or os.getenv('BOT_TOKEN')
+ADLINKFLY_KEY = os.environ.get('ADLINKFLY_TOKEN') or os.getenv('ADLINKFLY_TOKEN')
+START_MESSAGE = os.environ.get('START') or os.getenv('START')
+HELP_MESSAGE = os.environ.get('HELP') or os.getenv('HELP')
 bot = telebot.TeleBot(API_KEY)
 
 #function for No Ads shortening API call
