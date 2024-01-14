@@ -17,7 +17,8 @@ API_KEY = os.environ.get('BOT_TOKEN') or os.getenv('BOT_TOKEN')
 ADLINKFLY_KEY = os.environ.get('ADLINKFLY_TOKEN') or os.getenv('ADLINKFLY_TOKEN')
 START_MESSAGE = os.environ.get('START') or os.getenv('START')
 HELP_MESSAGE = os.environ.get('HELP') or os.getenv('HELP')
-bot = telebot.TeleBot(API_KEY)
+
+bot = telebot.TeleBot(API_KEY)    #create bot instance
 
 #function for No Ads shortening API call
 def shorten_link(link):
@@ -69,50 +70,67 @@ def is_valid_url(link):
 @bot.message_handler(commands=['start'])
 def start(message):
   bot.reply_to(
-    message,
-    {START_MESSAGE},
-parse_mode='Markdown',
-disable_web_page_preview=True)
-  bot.send_message(message.chat.id, "Yay! I\'m too exited to see you..!!\nJust send me a link to shorten...")
+      message,
+      START_MESSAGE,
+      parse_mode='Markdown',
+      disable_web_page_preview=True)
+  bot.send_message(
+      message.chat.id,
+      "Yay! I\'m too exited to see you..!!\nJust send me a link to see the magic..."
+  )
 
 
 @bot.message_handler(commands=['help'])
 def help(message):
-  bot.reply_to(message, {HELP_MESSAGE}, parse_mode='Markdown', disable_web_page_preview=True)
-  
+  bot.reply_to(
+      message,
+      HELP_MESSAGE
+  )
+
 
 @bot.message_handler(commands=['ads'])
-def handle_ads_command(message):
-  bot.send_message(chat_id=message.chat.id, text="Please send the link to shorten with Ads!")
+def handle_nometa_command(message):
+  bot.send_message(
+      chat_id=message.chat.id,
+      text="Please send the link to shorten without URL metadata!")
   bot.register_next_step_handler(message, handle_link)
+
 
 def handle_link(message):
   if is_valid_url(message.text):
     bot.send_message(message.chat.id, "Shortening! Please wait...")
-    link = message.text
-    shortened_link = shorten_link_withads(link)
+    link = quote(message.text)    #urlencode the link
+    shortened_link = shorten_link_withads(link)    #shorten the link (With Ads)
     if shortened_link:
-     bot.reply_to(message, "Shortened with Ads!\n" + shortened_link, parse_mode='Markdown', disable_web_page_preview=True)
+      bot.reply_to(message,
+                   "Link Metadata Removed!\n" + shortened_link,
+                   parse_mode='Markdown',
+                   disable_web_page_preview=True)
     else:
-     bot.reply_to(message, 'Failed to shorten the link! Please try again...')
+      bot.reply_to(message, 'Failed to shorten the link! Please try again...')
   else:
-    bot.send_message(message.chat.id, "Invalid URL!\nPlease reuse the command /ads to try again with a valid link...")
+    bot.send_message(
+        message.chat.id,
+        "Invalid URL!\nPlease reuse the command /nometa to try again with a valid link..."
+    )
 
 
 @bot.message_handler(content_types=['text'])
 def handle_text(message):
   if is_valid_url(message.text):
     bot.send_message(message.chat.id, "Shortening! Please wait...")
-    shortened_link = shorten_link(message.text)
+    link = quote(message.text)    #urlencode the link
+    shortened_link = shorten_link(link)    #shorten the link (No Ads)
     if shortened_link:
       bot.reply_to(message,
                    shortened_link,
                    parse_mode='Markdown',
-               disable_web_page_preview=True)
+                   disable_web_page_preview=True)
     else:
       bot.reply_to(message, 'Failed to shorten the link! Please try again...')
   else:
-    bot.send_message(message.chat.id, "Invalid URL!\nPlease send a valid link...!")
+    bot.send_message(message.chat.id,
+                     "Invalid URL!\nPlease send a valid link...!")
 
 
 keep_alive()
