@@ -1,5 +1,5 @@
 services:
-  - type: web
+- type: web
   name: adlinkfly-telegram-bot
   runtime: python
   repo: https://github.com/techishfellow/adlinkfly-telegram-bot.git
@@ -9,13 +9,13 @@ services:
   startCommand: python3 adlinkfly_bot.py
   autoDeploy: false
   envVars:
-    - key: DOMAIN_NAME
+  - key: DOMAIN_NAME
     sync: false
-    - key: BOT_TOKEN
+  - key: BOT_TOKEN
     sync: false
-    - key: ADLINKFLY_TOKEN
+  - key: ADLINKFLY_TOKEN
     sync: false
-    - key: START
+  - key: START
     sync: false
-    - key: HELP
+  - key: HELP
     sync: false
