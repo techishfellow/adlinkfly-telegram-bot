@@ -1,15 +1,17 @@
 # Adlinkfly Telegram Bot
 
 ### A Simple to Use Python based Telegram Bot Script designed to work with Adlinlfly PHP Link Shortener Website using the Adlinkfly Developer API!<br></br>
-[![status](https://img.shields.io/badge/status-active-brightgreen.svg?style=flat)](https://github.com/techishfellow/adlinkfly-telegram-bot)
-[![release verion](https://img.shields.io/badge/release-v2.1.0-yellow.svg?style=flat)](https://github.com/techishfellow/adlinkfly-telegram-bot/releases/)
-[![python version](https://img.shields.io/badge/python-v3.11.x-blue.svg?style=flat)](https://www.python.org/downloads/)
+[![status](https://img.shields.io/badge/status-active-brightgreen?style=flat)](https://github.com/techishfellow/adlinkfly-telegram-bot)
+[![release verion](https://img.shields.io/badge/release-v2.1.0-yellow?style=flat)](https://github.com/techishfellow/adlinkfly-telegram-bot/releases/)
+[![python version](https://img.shields.io/badge/python-v3.12.x-blue?logo=python&style=flat)](https://www.python.org/downloads/)
 <br></br>
 
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/techishfellow/adlinkfly-telegram-bot.git)
-[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/techishfellow/adlinkfly-telegram-bot&branch=main&name=adlinkfly-telegram-bot&service_type=web&instance_type=free&ports=8080;http;/&env[DOMAIN_NAME]=yourDomainName&env[BOT_TOKEN]=yourTelegramBotApiToken&env[ADLINKFLY_TOKEN]=yourAdlinkflyApiToken&env[START]=yourStartMessage&env[HELP]=yourHelpMessage&run_command=python3%20adlinkfly_bot.py)
+**⚡ 1-Click Deployment:**
 
-**⚡ Requirements:**
+[![Deploy to Koyeb](https://img.shields.io/badge/deploy%20to%20koyeb-2c7653?style=for-the-badge&logo=koyeb)](https://app.koyeb.com/deploy?type=git&repository=github.com/techishfellow/adlinkfly-telegram-bot&branch=main&name=adlinkfly-telegram-bot&service_type=web&instance_type=free&ports=8080;http;/&env[DOMAIN_NAME]=yourDomainName&env[BOT_TOKEN]=yourTelegramBotApiToken&env[ADLINKFLY_TOKEN]=yourAdlinkflyApiToken&env[START]=yourStartMessage&env[HELP]=yourHelpMessage&run_command=python3%20adlinkfly_bot.py)
+[![Deploy to Render](https://img.shields.io/badge/deploy%20to%20render-8a05ff?style=for-the-badge&logo=render&logoColor=ffffff)](https://render.com/deploy?repo=https://github.com/techishfellow/adlinkfly-telegram-bot.git)
+
+**📌 Requirements:**
 
 1. Python Packages:
    * [pyTelegramBotAPI](https://pypi.org/project/pyTelegramBotAPI/)
@@ -37,7 +39,6 @@
 * More features will be added soon! stay tuned...!!!
 
 **🔽 Download and Demo:**
-* **Demo:** See and interact with a live Adlinkfly Telegram Bot - (ProURL Infinity Bot) - [Chat with ProURL Infinity Bot](https://t.me/ProURL_bot)
 * **Download:**
    * Download from the latest stable release:
       * For Replit Deployment:-  replit-adlinkfly-telegram-bot-vX.X.X.zip [Download Now](https://github.com/techishfellow/adlinkfly-telegram-bot/releases/)
