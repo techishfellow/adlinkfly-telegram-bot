@@ -1,10 +1,8 @@
 flask
 gunicorn
 threaded
-numpy
 telebot
 pytelegrambotapi
 regex
 requests
-urllib3
 python-dotenv
