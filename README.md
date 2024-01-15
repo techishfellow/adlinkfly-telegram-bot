@@ -11,6 +11,8 @@
 [![Deploy to Koyeb](https://img.shields.io/badge/deploy%20to%20koyeb-2c7653?style=for-the-badge&logo=koyeb)](https://app.koyeb.com/deploy?type=git&repository=github.com/techishfellow/adlinkfly-telegram-bot&branch=main&name=adlinkfly-telegram-bot&service_type=web&instance_type=free&ports=8080;http;/&env[DOMAIN_NAME]=yourDomainName&env[BOT_TOKEN]=yourTelegramBotApiToken&env[ADLINKFLY_TOKEN]=yourAdlinkflyApiToken&env[START]=yourStartMessage&env[HELP]=yourHelpMessage&run_command=python3%20adlinkfly_bot.py)
 [![Deploy to Render](https://img.shields.io/badge/deploy%20to%20render-8a05ff?style=for-the-badge&logo=render&logoColor=ffffff)](https://render.com/deploy?repo=https://github.com/techishfellow/adlinkfly-telegram-bot.git)
 
+* 1-click deployment is the easiest way to deploy this bot! Click on these buttons to deploy the bot in corresponding platform. Just make sure to fill-up/replace proper environmental variable (.env) values when asked.
+
 **📌 Requirements:**
 
 1. Python Packages:
@@ -38,11 +40,9 @@
   (* By default the link shortening method is set to *Direct Shortening without any Ads and Short Link Page*, if the User wants to shorten the link with *Ads and Short Link Page* the /ads command is required everytime!)
 * More features will be added soon! stay tuned...!!!
 
-**🔽 Download and Demo:**
-* **Download:**
-   * Download from the latest stable release:
-      * For Replit Deployment:-  replit-adlinkfly-telegram-bot-vX.X.X.zip [Download Now](https://github.com/techishfellow/adlinkfly-telegram-bot/releases/)
-      * For Normal Deployment:- adlinkfly-telegram-bot-vX.X.X.zip [Download Now](https://github.com/techishfellow/adlinkfly-telegram-bot/releases/)
+**🔽 Download:**
+   * You don't need to download anything for most case (except: you are deploying this in your own custom server)
+   * For Custom Server deployment Download the Latest ZIP from Releases Section: adlinkfly-telegram-bot-vX.X.X.zip [Download Now](https://github.com/techishfellow/adlinkfly-telegram-bot/releases/)
 
 **⚙️ Configurations:**
 
