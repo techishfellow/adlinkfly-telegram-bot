@@ -2,10 +2,11 @@
 
 ### A Simple to Use Python based Telegram Bot Script designed to work with Adlinlfly PHP Link Shortener Website using the Adlinkfly Developer API!<br></br>
 [![status](https://img.shields.io/badge/status-active-brightgreen.svg?style=flat)](https://github.com/techishfellow/adlinkfly-telegram-bot)
-[![release verion](https://img.shields.io/badge/release-v1.1.0-yellow.svg?style=flat)](https://github.com/techishfellow/adlinkfly-telegram-bot/releases/)
-[![build](https://img.shields.io/badge/builds-passing-brightgreen.svg?style=flat)](https://github.com/techishfellow/adlinkfly-telegram-bot)
-[![python version](https://img.shields.io/badge/python-v3.8.0-blue.svg?style=flat)](https://www.python.org)
+[![release verion](https://img.shields.io/badge/release-v2.1.0-yellow.svg?style=flat)](https://github.com/techishfellow/adlinkfly-telegram-bot/releases/)
+[![python version](https://img.shields.io/badge/python-v3.11.x-blue.svg?style=flat)](https://www.python.org/downloads/)
 <br></br>
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/techishfellow/adlinkfly-telegram-bot.git)
 
 **⚡ Requirements:**
 
@@ -16,14 +17,16 @@
    * [regex](https://pypi.org/project/regex/)
    * [Flask](https://pypi.org/project/Flask/)
    * [threaded](https://pypi.org/project/threaded/)
+   * [gunicorn](https://pypi.org/project/gunicorn/)
+   * [python-dotenv](https://pypi.org/project/python-dotenv/)
 2. Must have a Adlinkfly Link Shortener Website hosted on the web with a valid domain name
 3. Your Adlinkfly website has a valid SSL Certificate installed (Accessable via HTTPS protocol!)
 4. Must have configured a suitable runtime envioronment to run python scripts!
-(Recommended: Replit, PythonAnywhare, Heroku -OR- Any Python Compatible Web Server)
+(Recommended: Render, Koyeb, Replit -OR- Any Python Compatible Web Server)
 
 **🏷️ Features:**
 * Easy to Integrate and Customiseable (All-in-One Config File!)
-* Auto URL Detection and Shortening (No extra commands needed! Just send the link to shorten...Just too easy..!!)
+* Auto URL Detection and Shortening (No extra commands needed! Just send the link to shorten...It's too easy..!!)
 * Auto userinput Link Validation with Error Messages.
 * Available Telegram Commands:
   * **/start** - Shows a custom welcome message when user starts the first conversation with the bot
