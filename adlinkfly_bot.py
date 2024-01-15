@@ -86,7 +86,9 @@ def start(message):
 def help(message):
   bot.reply_to(
       message,
-      HELP_MESSAGE
+      HELP_MESSAGE,
+      parse_mode='Markdown',
+      disable_web_page_preview=True
   )
 
 
