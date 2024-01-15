@@ -7,6 +7,7 @@
 <br></br>
 
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/techishfellow/adlinkfly-telegram-bot.git)
+[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/techishfellow/adlinkfly-telegram-bot&branch=main&name=adlinkfly-telegram-bot&service_type=web&instance_type=free&ports=8080;http;/&env[DOMAIN_NAME]=yourDomainName&env[BOT_TOKEN]=yourTelegramBotApiToken&env[ADLINKFLY_TOKEN]=yourAdlinkflyApiToken&env[START]=yourStartMessage&env[HELP]=yourHelpMessage&run_command=python3%20adlinkfly_bot.py)
 
 **⚡ Requirements:**
 
