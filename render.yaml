@@ -5,7 +5,7 @@ services:
   repo: https://github.com/techishfellow/adlinkfly-telegram-bot.git
   plan: free
   branch: main
-  buidCommand: "pip install -r requirements.txt"
+  buildCommand: pip install -r requirements.txt
   startCommand: python3 adlinkfly_bot.py
   autoDeploy: false
   envVars:
