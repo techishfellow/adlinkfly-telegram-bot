@@ -1,16 +1,16 @@
 services:
-    -type: web
-    name: adlinkfly-telegram-bot
-    runtime: python
-    repo: https://github.com/techishfellow/adlinkfly-telegram-bot.git
-    plan: free
-    branch: main
-    buidCommand: pip install -r requirements.txt
-    startCommand: python3 adlinkfly_bot.py
-    envVars:
-        -key: DOMAIN_NAME
-        -key: BOT_TOKEN
-        -key: ADLINKFLY_TOKEN
-        -key: START
-        -key: HELP
-    autoDeploy: false
+  -type: web
+  name: adlinkfly-telegram-bot
+  runtime: python
+  repo: https://github.com/techishfellow/adlinkfly-telegram-bot.git
+  plan: free
+  branch: main
+  buidCommand: pip install -r requirements.txt
+  startCommand: python3 adlinkfly_bot.py
+  envVars:
+    -key: DOMAIN_NAME
+    -key: BOT_TOKEN
+    -key: ADLINKFLY_TOKEN
+    -key: START
+    -key: HELP
+  autoDeploy: false

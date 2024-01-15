@@ -35,8 +35,6 @@
   (* By default the link shortening method is set to *Direct Shortening without any Ads and Short Link Page*, if the User wants to shorten the link with *Ads and Short Link Page* the /ads command is required everytime!)
 * More features will be added soon! stay tuned...!!!
 
-**🌟 IMPORTANT:** If you are using *Replit* to run this script! Unfortunately creation of ' .env ' file is now prohibited. For this reason scipt Download, Configuration and Installation steps are different, please follow the Replit Coniguration and Intallation steps insted!. Read more about ' .env ' file removal and the introduction of ' Replit Secrets ' [Here](https://docs.replit.com/programming-ide/storing-sensitive-information-environment-variables)
-
 **🔽 Download and Demo:**
 * **Demo:** See and interact with a live Adlinkfly Telegram Bot - (ProURL Infinity Bot) - [Chat with ProURL Infinity Bot](https://t.me/ProURL_bot)
 * **Download:**
