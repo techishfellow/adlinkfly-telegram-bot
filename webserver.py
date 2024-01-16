@@ -5,9 +5,9 @@ import subprocess
 #this script is developed by @neo_subhamoy
 #website: https://neosubhamoy.com
 
-app = Flask('Adlinkfly Telegram Bot')
+adlinkflytgbot = Flask('Adlinkfly Telegram Bot')
 
-@app.route('/')
+@adlinkflytgbot.route('/')
 def home():
   return "Adlinkfly Telegram Bot is Running!"
 
@@ -16,7 +16,7 @@ def run_gunicorn():
         'gunicorn',
         '-b', '0.0.0.0:8080',
         '-w', '4',
-        'webserver:app',
+        'webserver:adlinkflytgbot',
     ]
     subprocess.Popen(gunicorn_command)
 
