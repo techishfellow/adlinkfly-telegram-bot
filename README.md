@@ -118,6 +118,7 @@
     ```code
     pkill -SIGINT -f 'gunicorn -b 0.0.0.0:8080 -w 4 webserver:adlinkflytgbot'
     ```
+
 ### **🛠️ Contributing / Building from Source:**
   * Want to be the part of this project? Feel free to contribute..!! Pull Requests are always welcome....!! Follow this simple steps to start building . . .
   * Using Linux Development Environment is Required for Windows use WSL
@@ -134,8 +135,8 @@
 
 ### **📝 License & Usage**
 
-Adlinkfly Telegram Bot is an Open Sourced Project Licensed under GPL-3.0 Anyone can to View, Modify or Use (Personal and Commercial) it's Sources without any extra permissions. If you want to Distribute it's Sources then please consider giving it a attribution of this repo.
-NOTE: This Script is Not Officially developed, supported or affiliated by MightyScripts. This is just an hobbby project of mine!
+Adlinkfly Telegram Bot is an Open Sourced Project Licensed under GPL-3.0 Anyone can View, Modify or Use (Personal and Commercial) it's Sources without any extra permissions. If you want to Distribute it's Sources then please consider giving it an attribution of this repo.
+NOTE: This Script is Not Officially developed, supported or affiliated by MightyScripts. This is just a hobby project of mine!
 
 <br></br>
 
