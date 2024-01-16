@@ -2,18 +2,18 @@
 
 ### A Simple to Use Python based Telegram Bot Script designed to work with Adlinlfly PHP Link Shortener Website using the Adlinkfly Developer API!<br></br>
 [![status](https://img.shields.io/badge/status-active-brightgreen?style=flat)](https://github.com/techishfellow/adlinkfly-telegram-bot)
-[![release verion](https://img.shields.io/badge/release-v2.1.0-yellow?style=flat)](https://github.com/techishfellow/adlinkfly-telegram-bot/releases/)
+[![release verion](https://img.shields.io/badge/release-v1.5.0-yellow?style=flat)](https://github.com/techishfellow/adlinkfly-telegram-bot/releases/)
 [![python version](https://img.shields.io/badge/python-v3.12.x-blue?logo=python&style=flat)](https://www.python.org/downloads/)
 <br></br>
 
-**⚡ 1-Click Deployment:**
+### **⚡ 1-Click Deployment:**
 
 [![Deploy to Koyeb](https://img.shields.io/badge/deploy%20to%20koyeb-2c7653?style=for-the-badge&logo=koyeb)](https://app.koyeb.com/deploy?type=git&repository=github.com/techishfellow/adlinkfly-telegram-bot&branch=main&name=adlinkfly-telegram-bot&service_type=web&instance_type=free&ports=8080;http;/&env[DOMAIN_NAME]=yourDomainName&env[BOT_TOKEN]=yourTelegramBotApiToken&env[ADLINKFLY_TOKEN]=yourAdlinkflyApiToken&env[START]=yourStartMessage&env[HELP]=yourHelpMessage&run_command=python3%20adlinkfly_bot.py)
 [![Deploy to Render](https://img.shields.io/badge/deploy%20to%20render-8a05ff?style=for-the-badge&logo=render&logoColor=ffffff)](https://render.com/deploy?repo=https://github.com/techishfellow/adlinkfly-telegram-bot.git)
 
-* 1-click deployment is the easiest way to deploy this bot! Click on these buttons to deploy the bot in corresponding platform. Just make sure to fill-up/replace proper environmental variable (.env) values when asked.
+* 1-click deployment is the easiest way to deploy this bot! Click on these buttons to deploy the bot in corresponding platform. Just make sure to fill-up/replace proper environmental variable values when asked. Parameters are explained below in details (in Configuration / Environment Vriables section).
 
-**📌 Requirements:**
+### **📌 Requirements:**
 
 1. Python Packages:
    * [pyTelegramBotAPI](https://pypi.org/project/pyTelegramBotAPI/)
@@ -29,7 +29,8 @@
 4. Must have configured a suitable runtime envioronment to run python scripts!
 (Recommended: Render, Koyeb, Replit -OR- Any Python Compatible Web Server)
 
-**🏷️ Features:**
+### **🏷️ Features:**
+
 * Easy to Integrate and Customiseable (All-in-One Config File!)
 * Auto URL Detection and Shortening (No extra commands needed! Just send the link to shorten...It's too easy..!!)
 * Auto userinput Link Validation with Error Messages.
@@ -40,24 +41,27 @@
   (* By default the link shortening method is set to *Direct Shortening without any Ads and Short Link Page*, if the User wants to shorten the link with *Ads and Short Link Page* the /ads command is required everytime!)
 * More features will be added soon! stay tuned...!!!
 
-**🔽 Download:**
-   * You don't need to download anything for most case (except: you are deploying this in your own custom server)
+### **🔽 Download:**
+
+   * You don't need to download anything for most cases (except: you are deploying this in your own custom server)
    * For Custom Server deployment Download the Latest ZIP from Releases Section: adlinkfly-telegram-bot-vX.X.X.zip [Download Now](https://github.com/techishfellow/adlinkfly-telegram-bot/releases/)
 
-**⚙️ Configurations:**
-
-* **Replit Configuration Steps:**
-
-   1. Download the latest stable replit-adlinkfly-telegram-bot release zip file
-   2. Unzip the .zip archive using any archive manager software (Winrar, 7zip, ZArchiver etc.)
-   3. No extra configuration needed.....just follow the Replit Installation Steps
-
-* **Normal Configuration Steps:**
+### **⚙️ Configuration / Environment Vriables:**
    
-   1. Download the latest stable adlinkfly-telegram-bot release zip file
-   2. Unzip the .zip archive using any archive manager software (Winrar, 7zip, ZArchiver etc.)
-   3. Open the ' .env ' file with any text or code editor
-   4. Replace the below field values with yours!
+   * There is only one global configuration file ' .env ' also known as Environment Variables  which you need to configure for your bot! An example of available fields are shown in ' .env.example ' file and also described below (If you are using the 1-click deployment solutions you don't need to create any separate ' .env ' file. All the KEYs are predefined for you! You just need to input/replace their values when asked)
+   
+   ```code
+   DOMAIN_NAME = yourdomain.com
+   BOT_TOKEN = Paste Your Telegram Bot API Token
+   ADLINKFLY_TOKEN = Paste Your Adlinkfly API Token
+
+   START = Type the start message here you want to show the user \nNew Line Starts Here
+   HELP = Type the help message here you want to show the user \nNew Line Starts Here
+
+   #Don't use https:// on DOMAIN_NAME field just type the nacked domain name as shown!
+   #To change the line (New Line) of START or HELP message use ' \n ' between the lines (Works as Enter Key of Keyboard! Python Syntax... :-)
+   ```
+   
    * Important Fields:
       * DOMAIN_NAME = Write the Domain Name of your Adlinkfly Website (Write nacked domain name without: www,  http://,  https://) (eg: yourdomain.com)
       * API_TOKEN = Paste your Telegram Bot API Token Here.
@@ -70,39 +74,57 @@
       * Further customization of commands is possible by modifying the python source code....if you want you can try...!!!<br></br>
 
 
-**✔️ Installation:**
- * We recommend you to use [Replit](https://replit.com) + [UptimeRobot](https://uptimerobot.com) to run your Adlinkfly Telegram Bot 24/7 for absolutely Free of Cost!
+### **✔️ Installation / Deployment:**
 
-     * **Replit Installation Steps** :
-        1. Required installation files  - 2 Files: 'main.py', 'webserver.py'. (Optional Packager files: 'poetry.lock' and 'pyproject.toml' will be created automatically by Replit)
+  * **1-Click Deployment (Easiest):**
+    1. Just click on any one of the button given at the top (in which platform you want to deploy) and follow the steps. NOTE: Make sure to Login the platform first before clicking on the button
+    2. You will be asked to fill-up the Environment Variable values (check Configuration / Environment Vriables section for more info) Fill-up the values properly and proceed. That's it...!!
+    * Your platform is not listed? -> I'm continuously trying to integrate more and more platforms. But, if it's still not listed You can try the custom deployment option or contact me for further info.
+  * **Replit Deployment:**
+    1. Use 'Import from GitHub' option to import this repo. Don't know how to do so? read [Here](https://docs.replit.com/hosting/deployments/deploying-a-github-repository)
+    * Use this URL to Import:
+    ```code
+    https://github.com/techishfellow/adlinkfly-telegram-bot.git
+    ```
+    * Use this run command:
+    ```code
+    python3 adlinkfly_bot.py
+    ```
+    2. Open a 'Shell' window and run this command to install all dependencies:
+    ```code
+    pip install -r requirements.txt
+    ```
+    3. Open a 'Secrets' window and configure all secrets as explained earlier (in Configuration / Environment Vriables section). Replit Secrets works the same as Environment Variables. Don't know how to use Replit Secrets? read [Here](https://docs.replit.com/programming-ide/workspace-features/secrets)
 
-        2. Visit Replit and create a New Public Project selecting the Python Runtime Environment
+    4. Now just click on the green 'Run' button at the top to start the bot. That's it...!!
+  * **Custom Server Deployment:**
+    * IMPORTANT: This script only works in WSGI Compitable Servers (Most Linux Distros will work fine...!! Windows is not supported...!!)
+    1. Unzip the downloaded release ZIP file (using any zip extractor software. eg: WinRAR, 7zip etc.)
+    2. Open the extracted folder and Create a new ' .env ' file on that location and configure it as explained earlier (in Configuration / Environment Vriables section) (Use any text editor software or terminal text editors. eg: notepad, vim, nano)
+    3. Upload all the extracted files along with the .env file in your server root
+    4. Make sure you have already installed **python3** and **pip** in your server (Most linux distros comes with python3 pre-installed. You just need to install pip) To install pip with apt package manager in Ubuntu run this below command in your server terminal:
+    ```code
+    sudo apt install python3-pip
+    ```
+    5. Now, to install all the dependencies run this command:
+    ```code
+    pip install -r requirements.txt
+    ```
+    6. Now, to start the bot run this command:
+    ```code
+    python3 adlinkfly_bot.py
+    ```
+    7. **To, STOP the bot you can use CTRL + C or this command:**
+    ```code
+    pkill -SIGINT -f 'gunicorn -b 0.0.0.0:8080 -w 4 webserver:app'
+    ```
+### **📝 License & Usage**
 
-        3. Navigate to the left 'Files' Sidebar click on the 'three dots', choose 'Upload file' option and upload the downloaded 'main.py', 'webserver.py' files one by one
+Adlinkfly Telegram Bot is an Open Sourced Project Licensed under GPL-3.0 Anyone can to View, Modify or Use (Personal and Commercial) it's Sources without any extra permissions. If you want to Distribute it's Sources then please consider giving it a attribution of this repo.
+NOTE: This Script is Not Officially developed, supported or affiliated by MightyScripts. This is just an hobbby project of mine!
 
-        4. Now navigate to the 'Tools' section and choose 'Secrets' then create these 5 SECRET_KEY named: DOMAIN_NAME, BOT_TOKEN, ADLINKFLY_TOKEN, START, HELP (Fill up your own values on the value field of the Secrets - Read the Normal Configaration Steps section point (iv) for more info)
-
-        5. Then navigate to the 'Packages' section and make sure to install all the required python packages mentioned earlier at the top (Just search the packages and click install)
-
-        6. Now at this point you are all set to start the bot. Just click on the green 'Run' button at the top (An 'Webview' page will be created automatically and it will display 'Adlinkfly Telegram Bot is Running')
-
-        7. Now copy the 'Webview' URL and visit the UptimeRobot website. If you don't have an account just create one and set a HTTPS Monitor to the copied URL (It will ping the Raplit server every 5Min to keep your bot up and running for 24/7)
-
-     * **Normal Installation Steps** :
-
-        1. The main installation files are - 3
-        Files: 'main.py', 'webserver.py' and '.env'
-
-        2. Make sure to configure the '.env' file as shown earlier on the 'Normal Installation Configuration' section
-
-        3. Upload the main 3 files to your server Root -OR- Project Root directory (Must remember the server URL)
-
-        4. Make sure to install all the required python packages mentioned earlier at the top (Via your package manager - Recommend: pip)
-
-        5. Now at this point you are all set to start the bot. If you are using (PythonAnywhare, Heroku etc.) then just 'Run' the script. If you are using your own web server then you don't need to do anything else
-
-        6. If you are using (PythonAnywhare, Heroku -OR- Your Web Server have Hibernation) then head over to UptimeRobot website: Create your account and set a HTTPS Monitor to your Server URL
-        (It will ping the Server every 5Min to keep your bot up and running for 24/7!)
+<br></br>
 
 ***
+
 **An Open Sourced Project** - Developed with &hearts; by **Subhamoy**
