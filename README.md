@@ -116,8 +116,22 @@
     ```
     7. **To, STOP the bot you can use CTRL + C or this command:**
     ```code
-    pkill -SIGINT -f 'gunicorn -b 0.0.0.0:8080 -w 4 webserver:app'
+    pkill -SIGINT -f 'gunicorn -b 0.0.0.0:8080 -w 4 webserver:adlinkflytgbot'
     ```
+### **🛠️ Contributing / Building from Source:**
+  * Want to be the part of this project? Feel free to contribute..!! Pull Requests are always welcome....!! Follow this simple steps to start building . . .
+  * Using Linux Development Environment is Required for Windows use WSL
+  1. Git Clone this repo.
+  2. Create your .env file as explained earlier.
+  3. Install all dependencies:
+  ```code
+  pip install -r requirements.txt
+  ```
+  4. Run the bot:
+  ```code
+  python3 adlinkfly_bot.py
+  ```
+
 ### **📝 License & Usage**
 
 Adlinkfly Telegram Bot is an Open Sourced Project Licensed under GPL-3.0 Anyone can to View, Modify or Use (Personal and Commercial) it's Sources without any extra permissions. If you want to Distribute it's Sources then please consider giving it a attribution of this repo.
