@@ -12,9 +12,9 @@ import telebot
 
 load_dotenv()   #load environment variables from .env file
 
-DOMAIN = os.environ.get('DOMAIN_NAME') or os.getenv('DOMAIN_NAME')
-API_KEY = os.environ.get('BOT_TOKEN') or os.getenv('BOT_TOKEN')
-ADLINKFLY_KEY = os.environ.get('ADLINKFLY_TOKEN') or os.getenv('ADLINKFLY_TOKEN')
+DOMAIN = os.environ.get('osefe.xyz') or os.getenv('osafe.xyz')
+API_KEY = os.environ.get('7441677216:AAELT9kxdrI-I3Z--BkiiOCvAEB9ENPahMQ') or os.getenv('7441677216:AAELT9kxdrI-I3Z--BkiiOCvAEB9ENPahMQ')
+ADLINKFLY_KEY = os.environ.get('c317921ec753d0ec0a4bc56ce3debf389954e4ad') or os.getenv('c317921ec753d0ec0a4bc56ce3debf389954e4ad')
 START = os.environ.get('START') or os.getenv('START')
 HELP = os.environ.get('HELP') or os.getenv('HELP')
 START_MESSAGE = START.replace("\\n", "\n")
