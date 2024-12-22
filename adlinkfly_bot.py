@@ -198,7 +198,7 @@ def handle_alias_creation(message):
     # Clean up user data
     del user_data[chat_id]
 
-@bot.message_handler(commands=['alias-ads'])
+@bot.message_handler(commands=['alias_ads'])
 def handle_alias_ads_command(message):
     bot.send_message(
         chat_id=message.chat.id,
@@ -215,14 +215,14 @@ def handle_alias_ads_url(message):
     else:
         bot.send_message(
             message.chat.id,
-            "Invalid URL!\nPlease use /alias-ads command again with a valid link..."
+            "Invalid URL!\nPlease use /alias_ads command again with a valid link..."
         )
 
 def handle_alias_ads_creation(message):
     if not is_valid_alias(message.text):
         bot.send_message(
             message.chat.id,
-            "Invalid alias! Only letters, numbers, and hyphens are allowed.\nPlease use /alias-ads command again..."
+            "Invalid alias! Only letters, numbers, and hyphens are allowed.\nPlease use /alias_ads command again..."
         )
         return
 
@@ -230,7 +230,7 @@ def handle_alias_ads_creation(message):
     if chat_id not in user_data:
         bot.send_message(
             chat_id,
-            "Something went wrong. Please start over with /alias-ads command."
+            "Something went wrong. Please start over with /alias_ads command."
         )
         return
 

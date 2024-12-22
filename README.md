@@ -41,7 +41,7 @@
   * **/ads** - Shortens the link with Ads. Also creates a separate Short Link Page!
   (* By default the link shortening method is set to *Direct Shortening without any Ads and Short Link Page*, if the User wants to shorten the link with *Ads and Short Link Page* the /ads command is required everytime!)
   * **/alias** - Shortens the link with a custom alias of your choice (eg: yourdomain.com/cool-alias)
-  * **/alias-ads** - Shortens the link with a custom alias of your choice and also creates a separate Short Link Page which *includes Ads*
+  * **/alias_ads** - Shortens the link with a custom alias of your choice and also creates a separate Short Link Page which *includes Ads*
 
 ### **🔽 Download:**
 
