@@ -10,3 +10,4 @@ services:
       - ADLINKFLY_TOKEN=${ADLINKFLY_TOKEN}
       - START=${START}
       - HELP=${HELP}
+    restart: unless-stopped

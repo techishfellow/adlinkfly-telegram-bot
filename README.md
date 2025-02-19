@@ -5,6 +5,7 @@
 [![github tag](https://img.shields.io/github/v/tag/techishfellow/adlinkfly-telegram-bot?color=yellow)](https://github.com/techishfellow/adlinkfly-telegram-bot/releases/)
 [![python version](https://img.shields.io/badge/python-v3.13-blue?logo=python&style=flat)](https://www.python.org/downloads/)
 <br></br>
+> **🥰 Liked this project? Please consider giving it a Star (🌟) on github to show us your appreciation and help the algorythm recommend this project to even more awesome people like you!**
 
 ### **⚡ 1-Click Deployment:**
 
